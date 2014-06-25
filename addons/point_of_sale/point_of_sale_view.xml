@@ -672,7 +672,7 @@
                         <group string="Receipt" >
                             <field name="receipt_header" placeholder="A custom receipt header message"/>
                             <field name="receipt_footer" placeholder="A custom receipt header footage"/>
-                        </group>
+ a                       </group>
                         <group string="Barcode Types" col="1">
                             <p>
                                 Barcode Patterns allow to match barcodes to actions or to embed information such as price and quantity in the barcode.
@@ -701,7 +701,26 @@
                                 <field name="barcode_price" />
                             </group>
                         </group>
-                    </sheet>
+                    </group>
+                    <group string="Hardware Proxy" >
+                        <field name="proxy_ip" />
+                        <field name="iface_print_via_proxy" />
+                        <field name="iface_scan_via_proxy" />
+                        <field name="iface_electronic_scale" />
+                        <field name="iface_cashdrawer" />
+                    </group>
+                    <group string="Receipt" >
+                        <field name="receipt_header" placeholder="A custom receipt header message"/>
+                        <field name="receipt_footer" placeholder="A custom receipt header footage"/>
+                    </group>
+                    <group string="Barcode Types" col="4">
+                        <field name="barcode_product" />
+                        <field name="barcode_cashier" />
+                        <field name="barcode_customer" />
+                        <field name="barcode_weight" />
+                        <field name="barcode_discount" />
+                        <field name="barcode_price" />
+                    </group>
 
                 </form>
             </field>
@@ -995,3 +1014,4 @@
 
     </data>
 </openerp>
+
